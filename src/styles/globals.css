@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   ::-webkit-scrollbar-track {
     background-color: #bdbdbd00;
   }

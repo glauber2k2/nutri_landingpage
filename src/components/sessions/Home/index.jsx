@@ -13,7 +13,6 @@ export default function Home() {
           </h1>
         </span>
         <span>
-          <p>Sobre mim</p>
           <p>Planos</p>
           <p>Consultorio</p>
           <button>
