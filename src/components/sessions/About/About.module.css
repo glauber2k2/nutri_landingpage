@@ -18,8 +18,8 @@
   background-image: url('/images/bgabout.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  filter: blur(2px) grayscale(0.6);
-  background-position: 30%;
+  filter: grayscale(0.6);
+  background-position: 20%;
   box-shadow: 10px 0px 30px #000000;
   width: 60%;
   height: 100vh;
