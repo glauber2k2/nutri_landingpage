@@ -1,60 +1,78 @@
 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
   position: relative;
-}
-
-.container img {
-  position: absolute;
-  width: 25vw;
-  height: 25vw;
-  bottom: 2%;
-  right: 8%;
-  filter: grayscale(0.4) drop-shadow(3px 3px 1px #8454ff);
-}
-
-.bg {
   background-image: url('/images/bgabout.jpg');
+  background-position: center 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  filter: grayscale(0.6);
-  background-position: 30%;
-  box-shadow: 10px 0px 30px #000000;
-  width: 60%;
-  height: 100vh;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: brightness(95%);
 }
 
 .about {
   display: flex;
   flex-direction: column;
   padding: 2%;
-  width: 40%;
+  width: 65%;
+  height: 65%;
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  background: rgb(80, 34, 195);
+  background: linear-gradient(
+    152deg,
+    #5022c3a8 0%,
+    rgba(241, 204, 255, 0.671) 55%,
+    rgba(226, 192, 255, 0.692) 70%,
+    #9275dd8a 100%
+  );
+  box-shadow: 0px 0px 20px #000000b6;
 }
 
 .about h1 {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 5vw;
-  color: #8554ff;
+  color: #fff;
   font-weight: 300;
 }
 
 .about h2 {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 5%;
   margin-inline: auto;
-  width: 40%;
+  width: 30%;
   font-size: 2vw;
-  background: #8554ff;
-  color: #fff;
+  backdrop-filter: blur(30px);
+  border-radius: 50px;
+  background: linear-gradient(
+    267deg,
+    #ffffff7e 0%,
+    #fbd9ff88 52%,
+    #ffffff86 100%
+  );
+  color: #8554ff;
   padding: 1%;
   font-weight: 600;
 }
 
 .about h4 {
-  background: #8554ff;
-  color: #fff;
+  background: #fff;
+  color: #8554ff;
   margin: 10% 0 2% 0;
   font-size: 1vw;
   font-weight: 600;
@@ -65,4 +83,32 @@
 .about p {
   margin-top: 1%;
   font-size: 0.9vw;
+  color: #fff;
+}
+
+.about button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  width: 20%;
+  height: 2rem;
+  font-weight: 600;
+  margin-left: auto;
+  backdrop-filter: blur(30px);
+  border-radius: 50px;
+  background: linear-gradient(
+    267deg,
+    #ec43ffc0 0%,
+    #ed4dff88 52%,
+    #5800bd88 100%
+  );
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.about button:hover {
+  color: #000;
 }

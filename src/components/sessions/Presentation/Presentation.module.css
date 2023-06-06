@@ -77,19 +77,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #5022c3;
+  backdrop-filter: blur(30px);
+  border-radius: 50px;
   background: linear-gradient(
-    152deg,
-    #5022c3bb 0%,
-    #e137ff81 50%,
-    #b300ffa8 100%
+    267deg,
+    #a371ff7e 0%,
+    #f28dff88 52%,
+    #a581ff86 100%
   );
   border: 5px solid #f7ebff;
   padding: 2%;
   border-radius: 2vw;
   color: #fff;
   gap: 2%;
-  box-shadow: 0px 0px 40px #7d00b381;
+  box-shadow: 0px 0px 20px #7d00b381;
   z-index: 1;
 }
 
@@ -116,14 +117,22 @@
 }
 
 .itemPlans span {
-  background: #ffffff;
+  background: #5022c370;
   width: 100%;
   text-align: center;
   border-radius: 10px;
   letter-spacing: 2px;
-  color: #5022c3;
+  color: #fff;
   margin-top: auto;
-  font-weight: 800;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(
+    267deg,
+    #a371ff48 0%,
+    #f28dff49 52%,
+    #a581ff4b 100%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.342);
 }
 
 .description {
@@ -136,8 +145,14 @@
   position: relative;
   width: 25%;
   height: 37.5vh;
-  background: rgb(140, 95, 255);
-  background: linear-gradient(180deg, #b300ff62 0%, #1f002cbb 100%);
+  backdrop-filter: blur(30px);
+  border-radius: 50px;
+  background: linear-gradient(
+    267deg,
+    #a371ff7e 0%,
+    #f28dff88 52%,
+    #a581ff86 100%
+  );
   border-top-left-radius: 50px;
   border-top-right-radius: 150px;
   border: 5px solid #f7ebff;
