@@ -16,7 +16,7 @@ export default function Home() {
           <p>Planos</p>
           <p>Consultorio</p>
           <button>
-            <WhatsappLogo size={26} weight='fill' /> Agendar consulta
+            <WhatsappLogo weight='fill' /> <span>Agendar consulta</span>
           </button>
         </span>
       </nav>
@@ -56,11 +56,11 @@ export default function Home() {
 
       <footer>
         <h1>
-          <GraduationCap size={32} weight='fill' />
+          <GraduationCap weight='fill' />
           <span>Doutora em Nutrição</span>
         </h1>
         <h1>
-          <Barbell size={32} weight='fill' />
+          <Barbell weight='fill' />
           <span>Nutri Esportiva</span>
         </h1>
       </footer>

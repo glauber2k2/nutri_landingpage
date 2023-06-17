@@ -1,9 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Presentation.module.css';
 import { Scroll, ArrowRight, ArrowLeft } from 'phosphor-react';
 import Image from 'next/image';
 
 export default function Presentation() {
+  const [screenSize, setScreenSize] = useState('');
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768 || window.innerHeight > window.innerWidth) {
+        setScreenSize(2);
+      } else {
+        setScreenSize(4);
+      }
+    };
+
+    handleResize(); // Verifica o tamanho da tela inicialmente
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const plans = [
     {
@@ -27,7 +47,7 @@ export default function Presentation() {
       value: 'R$ 200',
     },
     {
-      name: 'Nutrição Esportiva',
+      name: 'Esportiva',
       description: 'Dieta para atletas + Acompanhamento especializado',
       value: 'R$ 150',
     },
@@ -48,7 +68,7 @@ export default function Presentation() {
     },
   ];
 
-  const itemsPerPage = 4; // Quantidade de planos exibidos por tela
+  const itemsPerPage = screenSize; // Quantidade de planos exibidos por tela
 
   const totalSlides = Math.max(plans.length - itemsPerPage + 1, 1);
 

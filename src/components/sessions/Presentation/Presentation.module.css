@@ -193,3 +193,107 @@
   font-size: 1.2vw;
   font-weight: 300;
 }
+
+@media (max-width: 720px), (orientation: portrait) {
+  .container {
+    padding: 5%;
+  }
+
+  .skill {
+    padding-inline: 2%;
+  }
+
+  .skill svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .skill button svg {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .skill h4 {
+    font-size: 3.1vw;
+  }
+
+  .nav {
+    gap: 8%;
+  }
+
+  .plans {
+    gap: 5%;
+    padding: 5%;
+  }
+
+  .itemPlans {
+    width: 50%;
+    height: 18vh;
+  }
+
+  .itemPlans h2 {
+    font-size: 4.6vw;
+  }
+
+  .itemPlans p {
+    font-size: 2.5vw;
+    font-weight: 600;
+  }
+
+  .itemPlans span {
+    font-size: 4vw;
+  }
+
+  .description {
+    flex-direction: column;
+  }
+
+  .woman {
+    margin-top: 15%;
+    width: 100%;
+    height: 20vh;
+    order: 1;
+    border-radius: 0%;
+    margin-inline: auto;
+    box-shadow: 0px 0px 20px #7d00b39c;
+    background: linear-gradient(
+      267deg,
+      #ea4eff88 0%,
+      #ee71ff88 52%,
+      #6f36ff86 100%
+    );
+  }
+
+  .woman::before {
+    position: absolute;
+    content: 'DRA.MARTA  NUTRICIONISTA';
+    font-size: 8vw;
+    margin: 5%;
+    font-weight: bold;
+    color: #ffffffc2;
+    filter: blur(0.5px);
+  }
+
+  .woman img {
+    width: 30vw;
+    height: 25vh;
+    top: -40%;
+    left: 60%;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .text h1 {
+    font-size: 5vw;
+  }
+
+  .text h2 {
+    font-size: 4vw;
+  }
+  .text p {
+    font-size: 3vw;
+    font-weight: 300;
+  }
+}
